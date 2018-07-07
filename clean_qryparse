@@ -1,0 +1,32 @@
+#!/bin/sh
+#
+#	clean_qryparse
+#	code by Jack
+#		Purpose: substitutes HTML character codes for special chars
+#			 so as to avoid code injection
+#		special chars: . ^ $ * [ < > - " \ |
+#
+
+#subs	char	code
+#	.	&#46;
+sed s/'\.'/'\&#46;'/g	|
+#	^	&#94;
+sed s/'\^'/'\&#94;'/g	|
+#	$	&#36;
+sed s/'\$'/'\&#36;'/g	|
+#	*	&#42;
+sed s/*/'\&#42;'/g	|
+#	[	&#91;
+sed s/'\['/'\&#91;'/g	|
+#	<	&lt;
+sed s/'<'/'\&lt;'/g	|
+#	>	&gt;
+sed s/'>'/'\&gt;'/g	|
+#	-	&#45;
+sed s/-/'\&#45;'/g	|
+#	"	&#34;
+sed s/'"'/'\&#34;'/g	|
+#	\	&#92;
+sed s/'\\'/'\&#92;'/g	|
+#	|	&#124;
+sed s/'|'/'\&#124;'/g

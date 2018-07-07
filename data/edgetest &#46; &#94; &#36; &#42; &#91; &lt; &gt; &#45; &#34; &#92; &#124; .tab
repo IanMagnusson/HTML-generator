@@ -1,0 +1,7 @@
+title=test1 &#46; &#94; &#36; &#42; &#91; &lt; &gt; &#45; &#34; &#92; &#124; |tcolor=grey|desc=special chars in title and descrip &#46; &#94; &#36; &#42; &#91; &lt; &gt; &#45; &#34; &#92; &#124; |url=http://www&#46;cnn&#46;com
+title=test2|tcolor=grey|desc=an absolute URL with a hyphen in it|url=https://www&#46;merriam&#45;webster&#46;com/
+title=test3|tcolor=grey|desc=a relative URL with underscore|url=cities_copy&#46;html
+title=&#45;V test4|tcolor=grey|desc=a item with a cmd option in its title|url=cities&#46;html
+title=test|tcolor=grey|desc=this item has a name that is a subset of other item names|url=cities&#46;html
+title=test&#46;|tcolor=grey|desc=this item would match names test# if not for char subs|url=cities&#46;html
+title=test6|tcolor=grey|desc=tags in input do nothing &lt;a href=&#34;cities&#46;html&#34;&gt;link&lt;/a&gt;|url=cities&#46;html

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+	<style type='text/css'>
+		td.rj { text-align: right; }
+	</style>
+
+	<title>My Web Page Designer</title>
+</head>
+
+<body bgcolor='white'>
+<center>
+	<hr>
+	<span style='color: blue; font-size: larger;'>
+	My Web Page<br> Page Creator/Editor Tool<br>
+	</span>
+	<hr>
+</center>
+<p>
+Use this page to create and edit customized web pages.  You can add
+items to pages, edit items on pages, and delete items on pages.  
+<hr>
+
+<!-- a def list allows for headers and indented blocks -->
+
+<dl>
+<dt><b>Add/Edit an Item</b></dt>
+	<dd>
+	<p>
+	Use this function to add new items to your web page or
+	edit existing items.  Include
+	the name of the page and all the details about the item.
+	When you are done, press the <b>update</b> button, and the
+	new item will be added to the named web page.  If the
+	page contains an item with the same title, that item
+	will be replaced with the data you provide.
+	<p>
+	<form action='add-edit_item.cgi' method='get'>
+	<table border='0' cellpadding='2' cellspacing='0'>
+	<tr>
+	   <td class='rj'>Page name:</td>
+	   <td><input type='text' name='pagename' size='20'></td>
+	</tr>
+	<tr>
+	   <td class='rj'>Item title:</td>
+	   <td><input type='text' name='title' size='20'></td>
+	</tr>
+	<tr>
+	   <td class='rj'>Title color:</td>
+	   <td><input type='text' name='titlecolor' size='20'></td>
+	</tr>
+	<tr>
+	   <td class='rj'>Description:</td>
+	   <td><input type='text' name='descrip' size='40'></td>
+	</tr>
+	<tr>
+	   <td class='rj'>URL:</td>
+	   <td><input type='text' name='url' size='40'></td>
+	</tr>
+	<tr>
+	   <td></td>
+	   <td><input type='submit' value=' update '></td>
+	</tr>
+	</table>
+	</form>
+	</dd>
+<dt>
+<hr>
+<b>Delete an Item</b></dt>
+	<dd>
+	<p>
+	Use this function to delete an item from a page.
+	Enter the name of the page and the title of the
+	item.  Then press the <b>Delete</b> button.
+	<p>
+	<form action='delete_item.cgi' method='get'>
+	<table border='0' cellpadding='2' cellspacing='0'>
+	<tr>
+	   <td class='rj'>Page name:</td>
+	   <td><input type='text' name='pagename' size='20'></td>
+	</tr>
+	<tr>
+	   <td class='rj'>Item title:</td>
+	   <td><input type='text' name='title' size='20'></td>
+	</tr>
+	<tr>
+	   <td></td>
+	   <td><input type='submit' value=' delete '></td>
+	</tr>
+	</table>
+	</form>
+	</dd>
+<dt>
+<hr>
+<b>View a Page</b></dt>
+	<dd>
+	<p>
+	Use this function to see what a page looks like.
+	Enter the name of the page and press the <b>view</b>
+	button.
+	<p>
+	<form action='view_page.cgi' method='get'>
+	<table border='0' cellpadding='2' cellspacing='0'>
+	<tr>
+	   <td class='rj'>Page name:</td>
+	   <td><input type='text' name='pagename' size='20'></td>
+	</tr>
+	<tr>
+	   <td></td>
+	   <td><input type='submit' value=' view '></td>
+	</tr>
+	</table>
+	</form>
+	</dd>
+</dl>
+</body>
+</html>

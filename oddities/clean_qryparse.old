@@ -1,0 +1,16 @@
+#!/bin/sh
+#	a helper for qryparse that also removes bad chars from param values
+#	code by Jack
+#		input: expects pipe from qryparse
+#
+
+# removes embeded single quotes
+sed 's/['\''][\\]['\'']['\'']//g' | \
+# removes \n
+sed 's/[\\][n]//g' | \
+# removes \r
+sed 's/[\\][r]//g' | \
+# removes ] [ ; & ` \ " | * ? ~ ^ < > ( ) { } $ .
+sed 's/[][;&`\\"|*?~^<>(){}$\.]//g' |
+# removes values starting with - (IE option flags)
+sed 's/='\''-/='\''/g' 

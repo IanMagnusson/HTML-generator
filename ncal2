@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+#	ncal2:	nicer cal program. Accepts month names, not just numbers
+#	usage: 	ncal2 monthname year
+#	!new!:  defaults to current year (or month) if not given
+#
+
+# ... get month and year from command line or from output of date
+
+	case $# in
+		2)	MON=$1	; YEAR=$2 ;;	# both given by user
+		1)	MON=$1			# only month given
+			set `date`		# set pos parms from date
+			YEAR=$6			# Sun Nov 26 12:06:36 EST 1995
+			;;
+		0)	set `date`		# neither given
+			MON=$2 ; YEAR=$6	# get both from `date`
+			;;
+		*)	echo usage $0  [monthname [year]] 
+			exit 1 ;;
+	esac
+
+#  ... use case to convert string to number .. using a script
+
+	M=`./name2num $MON`
+#
+#  now do the command
+#
+	/usr/bin/cal $M $YEAR

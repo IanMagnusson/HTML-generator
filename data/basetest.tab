@@ -1,0 +1,6 @@
+title=test1|tcolor=green|desc=this test shows an item with a lowercase colorname|url=not&#45;a&#45;url
+title=test2|tcolor=Yellow|desc=this test shows an item with a mixed&#45;case colorname|url=not&#45;a&#45;url
+title=test3|tcolor=#ffffff|desc=this test shows an item with a hex triplet colorname|url=not&#45;a&#45;url
+title=test4|tcolor=#BC8F8F|desc=this test shows an item with a hex triplet (uppercase) colorname|url=not&#45;a&#45;url
+title=test5|tcolor=grey|desc=this test shows a relative URL|url=cities&#46;html
+title=test6|tcolor=grey|desc=this test shows an absalute URL|url=http://www&#46;cnn&#46;com

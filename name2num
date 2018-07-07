@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# name2num: converts a single argument to the corresponding month number
+#           sends result to stdout, exits 1 if error
+#
+	M=error ; RETVAL=0
+	case $1 in
+		jan*|Jan*)	M=1	;;
+		feb*|Feb*)	M=2	;;
+		mar*|Mar*)	M=3	;;
+		apr*|Apr*)	M=4	;;
+		may*|May*)	M=5	;;
+		jun*|Jun*)	M=6	;;
+		jul*|Jul*)	M=7	;;
+		aug*|Aug*)	M=8	;;
+		sep*|Sep*)	M=9	;;
+		oct*|Oct*)	M=10	;;
+		nov*|Nov*)	M=11	;;
+		dec*|Dec*)	M=12	;;
+		[1-9]|1[012])	M=$1	;;		# accept nums, too
+		*)		RETVAL=1;;		# error condition
+	esac
+	echo $M
+	exit $RETVAL

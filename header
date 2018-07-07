@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<!-- a web page called $PAGENAME -->
+<head>
+<title>$PAGENAME</title>
+</head>
+<body bgcolor='white'>
+<b>A Web Page for $PAGENAME</b>
+<hr>
+Customized Links for $PAGENAME
+<p>
+<center>
+<table border='1' cellpadding='5'>

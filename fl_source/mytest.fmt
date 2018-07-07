@@ -1,0 +1,14 @@
+***TEST PLAYGROUND***
+
+TITLE: %title% 
+
+FIRSTNAME: %fn%
+
+LASTNAME: %ln%
+
+ADDRESS: %address% 
+
+CITY: %city%
+
+***END TEST***
+

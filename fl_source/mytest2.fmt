@@ -1,0 +1,8 @@
+REPORT
+
+TITLE: %title%
+NAME: %lastname%, %firstname%
+ADDR: %address%, %city%
+
+All customers in %city%:
+%!grep $city mytest2.dat%

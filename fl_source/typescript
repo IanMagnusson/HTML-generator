@@ -1,0 +1,399 @@
+Script started on Sat 11 Nov 2017 04:18:14 PM EST
+iam210@ice2:~/assignment5$ ./testscript
+gcc -Wall -Wextra  -g    -c -o fl.o fl.c
+gcc -Wall -Wextra  -g    -c -o process.o process.c
+gcc -Wall -Wextra  -g    -c -o wordstore13.o wordstore13.c
+gcc -Wall -Wextra  -g   fl.o process.o wordstore13.o   -o fl
+                                            Nov 11 2017
+
+	Dear Mr. Arlington,
+
+	You and everyone at 12 Apple Lane will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Alan, you may be the
+	person in Sometown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear Ms. Berkeley,
+
+	You and everyone at 23 Birch Ave will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Barbara, you may be the
+	person in Uptown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear Mrs. Clarendon,
+
+	You and everyone at 34 Clover Drive will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Carol, you may be the
+	person in Sometown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear Adm. Dartmouth,
+
+	You and everyone at 45 Daffodil Blvd will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, D., you may be the
+	person in Uptown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear Dr. Exeter,
+
+	You and everyone at 56 Elm Street will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Eric, you may be the
+	person in Uptown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear The Rev. Fairfield,
+
+	You and everyone at 67 Flax Circle will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Francis, you may be the
+	person in Downtown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear Miss Gloucester,
+
+	You and everyone at 78 Gull Walk will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Gail, you may be the
+	person in Uptown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear Mr. Hereford,
+
+	You and everyone at 89 Hawk Road will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Henry, you may be the
+	person in Downtown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear  Ipswich,
+
+	You and everyone at 100 Indigo Way will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, Imogene, you may be the
+	person in Uptown to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+                                            Nov 11 2017
+
+	Dear  ,
+
+	You and everyone at  will be delighted to hear
+	that you may already have won a major prize in the
+	CSCI sweepstakes.  Yes, John, you may be the
+	person in  to be the lucky winner of a new jet 
+	aircraft, ocean liner, or luxury vacation.  Read on..
+
+***TEST PLAYGROUND***
+
+TITLE:  
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: Anytown
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE:  
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: Anytown
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE: Mr. 
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS:  
+
+CITY: Anytown
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE: Mr. 
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: 
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE: Mr. 
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: 
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE:  
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: Anytown
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE: Mr. 
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS:      123 Min Street       
+
+CITY: Anytown
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE:  
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: Anytown
+
+***END TEST***
+
+***TEST PLAYGROUND***
+
+TITLE: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+
+FIRSTNAME: John
+
+LASTNAME: Doe
+
+ADDRESS: 123 Min Street 
+
+CITY: Anytown
+
+***END TEST***
+
+REPORT
+
+TITLE: Mr.
+NAME: Arlington, Alan
+ADDR: 12 Apple Lane, Sometown
+
+All customers in Sometown:
+title=Mr.#firstname=Alan#lastname=Arlington#address=12 Apple Lane#city=Sometown
+title=Mrs.#firstname=Carol#lastname=Clarendon#address=34 Clover Drive#city=Sometown
+
+REPORT
+
+TITLE: Ms.
+NAME: Berkeley, Barbara
+ADDR: 23 Birch Ave, Uptown
+
+All customers in Uptown:
+title=Ms.#firstname=Barbara#lastname=Berkeley#address=23 Birch Ave#city=Uptown
+title=Adm.#firstname=D.#lastname=Dartmouth#address=45 Daffodil Blvd#city=Uptown
+title=Dr.#firstname=Eric#lastname=Exeter#address=56 Elm Street#city=Uptown
+title=Miss#firstname=Gail#lastname=Gloucester#address=78 Gull Walk#city=Uptown
+lastname=Ipswich#firstname=Imogene#address=100 Indigo Way#title=#city=Uptown
+
+REPORT
+
+TITLE: Mrs.
+NAME: Clarendon, Carol
+ADDR: 34 Clover Drive, Sometown
+
+All customers in Sometown:
+title=Mr.#firstname=Alan#lastname=Arlington#address=12 Apple Lane#city=Sometown
+title=Mrs.#firstname=Carol#lastname=Clarendon#address=34 Clover Drive#city=Sometown
+
+REPORT
+
+TITLE: Adm.
+NAME: Dartmouth, D.
+ADDR: 45 Daffodil Blvd, Uptown
+
+All customers in Uptown:
+title=Ms.#firstname=Barbara#lastname=Berkeley#address=23 Birch Ave#city=Uptown
+title=Adm.#firstname=D.#lastname=Dartmouth#address=45 Daffodil Blvd#city=Uptown
+title=Dr.#firstname=Eric#lastname=Exeter#address=56 Elm Street#city=Uptown
+title=Miss#firstname=Gail#lastname=Gloucester#address=78 Gull Walk#city=Uptown
+lastname=Ipswich#firstname=Imogene#address=100 Indigo Way#title=#city=Uptown
+
+REPORT
+
+TITLE: Dr.
+NAME: Exeter, Eric
+ADDR: 56 Elm Street, Uptown
+
+All customers in Uptown:
+title=Ms.#firstname=Barbara#lastname=Berkeley#address=23 Birch Ave#city=Uptown
+title=Adm.#firstname=D.#lastname=Dartmouth#address=45 Daffodil Blvd#city=Uptown
+title=Dr.#firstname=Eric#lastname=Exeter#address=56 Elm Street#city=Uptown
+title=Miss#firstname=Gail#lastname=Gloucester#address=78 Gull Walk#city=Uptown
+lastname=Ipswich#firstname=Imogene#address=100 Indigo Way#title=#city=Uptown
+
+REPORT
+
+TITLE: The Rev.
+NAME: Fairfield, Francis
+ADDR: 67 Flax Circle, Downtown
+
+All customers in Downtown:
+title=The Rev.#firstname=Francis#lastname=Fairfield#address=67 Flax Circle#city=Downtown
+title=Mr.#firstname=Henry#lastname=Hereford#address=89 Hawk Road#city=Downtown
+
+REPORT
+
+TITLE: Miss
+NAME: Gloucester, Gail
+ADDR: 78 Gull Walk, Uptown
+
+All customers in Uptown:
+title=Ms.#firstname=Barbara#lastname=Berkeley#address=23 Birch Ave#city=Uptown
+title=Adm.#firstname=D.#lastname=Dartmouth#address=45 Daffodil Blvd#city=Uptown
+title=Dr.#firstname=Eric#lastname=Exeter#address=56 Elm Street#city=Uptown
+title=Miss#firstname=Gail#lastname=Gloucester#address=78 Gull Walk#city=Uptown
+lastname=Ipswich#firstname=Imogene#address=100 Indigo Way#title=#city=Uptown
+
+REPORT
+
+TITLE: Mr.
+NAME: Hereford, Henry
+ADDR: 89 Hawk Road, Downtown
+
+All customers in Downtown:
+title=The Rev.#firstname=Francis#lastname=Fairfield#address=67 Flax Circle#city=Downtown
+title=Mr.#firstname=Henry#lastname=Hereford#address=89 Hawk Road#city=Downtown
+
+REPORT
+
+TITLE: 
+NAME: Ipswich, Imogene
+ADDR: 100 Indigo Way, Uptown
+
+All customers in Uptown:
+title=Ms.#firstname=Barbara#lastname=Berkeley#address=23 Birch Ave#city=Uptown
+title=Adm.#firstname=D.#lastname=Dartmouth#address=45 Daffodil Blvd#city=Uptown
+title=Dr.#firstname=Eric#lastname=Exeter#address=56 Elm Street#city=Uptown
+title=Miss#firstname=Gail#lastname=Gloucester#address=78 Gull Walk#city=Uptown
+lastname=Ipswich#firstname=Imogene#address=100 Indigo Way#title=#city=Uptown
+
+iam210@ice2:~/assignment5$ ~`[Klb[Kib113/hw/fl/test/[K.fl
+fl test script version 1.3 2008-Nov-30
+
+Part I: Normal input and format. 
+   a. reading from standard input? OK
+   b. reading from 1 file named on command line? OK
+   c. reading from several files on command line? OK
+
+Part II: Lots of variations, all legal, some weird.
+   testing: fl okfmt.1 < okdata.1 OK
+   testing: fl okfmt.1 < okdata.2 OK
+   testing: fl okfmt.1 < okdata.3 OK
+   testing: fl okfmt.2 < okdata.1 OK
+   testing: fl okfmt.2 < okdata.2 OK
+   testing: fl okfmt.2 < okdata.3 OK
+   testing: fl okfmt.3 < okdata.1 OK
+   testing: fl okfmt.3 < okdata.2 OK
+   testing: fl okfmt.3 < okdata.3 OK
+   testing: fl okfmt.4 < okdata.1 OK
+   testing: fl okfmt.4 < okdata.2 OK
+   testing: fl okfmt.4 < okdata.3 OK
+
+Part III: High Volume Processing.
+   formatting 3000 records..OK
+
+Part IV: Error Handling.
+The following tests will run your program with
+bad data or bad format files.  Your program must
+report an error for each of these tests.  The
+message you print should be informative.
+
+
+   a. data error: inappropriate data format
+../fl: Bad data:field with no =
+
+   b. data error: blank fieldnames, empty fields
+../fl: Bad Data:blank fieldname
+
+   c. format error: unterminated fieldname..
+
+
+../fl: no end % at insert point: to be the lucky winner of a new jet 
+	
+	Dear Mr. addressfirstnamecity
+   d. usage error: no such format file..
+../fl: Cannot open format file:no-such-file
+
+   e. usage error: no such data file..
+Arlington, Alan 10%
+Berkeley, Barbara 10%
+Clarendon, Carol 10%
+Dartmouth, D. 10%
+Exeter, Eric 10%
+Fairfield, Francis 10%
+Gloucester, Gail 10%
+Hereford, Henry 10%
+Ipswich, Imogene 10%
+../fl: Cannot open data file:no-such-file
+iam210@ice2:~/assignment5$ exit
+exit
+
+Script done on Sat 11 Nov 2017 04:19:16 PM EST

@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# fl - testscript
+#
+
+make fl
+
+./fl sample.fmt sample.dat
+
+./fl mytest.fmt -D -r#  mytest.dat
+
+./fl mytest2.fmt -d# mytest2.dat

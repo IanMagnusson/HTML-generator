@@ -1,0 +1,16 @@
+Assignment 5
+by Jack Magnusson
+Nov 11, 2017
+csci-es6
+
+Nothing worthy of comment beyond what is mentioned in file headers.
+
+Code for option/file handling in fl.c and implementation of get_record and
+mailmerge in process.c and implementation of clear_table in wordstore13.c and
+all helper functions for above mentioned by Jack
+
+All other code from class
+
+testscript runs 3 pairs of test input:
+sample.* pair is from class
+mytest.* and mytest2.* are composed by Jack and require delimiter setting

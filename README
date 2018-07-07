@@ -3,6 +3,14 @@ Jack Magnusson
 12/9/17
 csci-e26
 
+This is a HTML generator for lay-users to curate a simple website, with code 
+injection security that was the final project of my Introduction to C, Unix/Linux
+Programming, and Web Interfaces class. Code is a mix of class code and orignal and
+ownership is specified in comments in all sourcefiles.
+
+
+**** notes from assignment turn in ****
+
 Exercise Ia:
 - EXTRA CREDIT -
 ncal3.cgi implements the extra credit feature where a query for a month already

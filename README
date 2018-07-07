@@ -6,7 +6,9 @@ csci-e26
 This is a HTML generator for lay-users to curate a simple website, with code 
 injection security that was the final project of my Introduction to C, Unix/Linux
 Programming, and Web Interfaces class. Code is a mix of class code and orignal and
-ownership is specified in comments in all sourcefiles.
+ownership is specified in comments in all sourcefiles. Utilizes fl, a program from
+another assigment, that generates form letters from templates and data,repurposed
+for HTML generation (source files in sub directory).
 
 
 **** notes from assignment turn in ****

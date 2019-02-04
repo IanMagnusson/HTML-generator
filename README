@@ -1,4 +1,4 @@
-Assignment 7
+Final Assignment
 Jack Magnusson
 12/9/17
 csci-e26
@@ -6,30 +6,30 @@ csci-e26
 This is a HTML generator for lay-users to curate a simple website, with code 
 injection security that was the final project of my Introduction to C, Unix/Linux
 Programming, and Web Interfaces class. Code is a mix of class code and orignal and
-ownership is specified in comments in all sourcefiles. Utilizes fl, a program from
-another assigment, that generates form letters from templates and data,repurposed
-for HTML generation (source files in sub directory).
+ownership is specified below. Utilizes fl, a program from another assigment (source
+code in subdirectory), that generates form letters from templates and data,repurposed
+for HTML generation.
 
-
-**** notes from assignment turn in ****
-
-Exercise Ia:
-- EXTRA CREDIT -
-ncal3.cgi implements the extra credit feature where a query for a month already
-past in the year will return the calendar for the month in next year.
-Additionally, ncal3.cgi limits query input to alphanumeric chars for security.
-
-Exercise Ib:
-year.html also implements the month-next-year feature described above as it uses
-ncal3.cgi to retrieve calendars
-
-Exercise II:
+- EXTRA CREDIT: Code Injection Protection -
+I have enhanced the scripts called by ewp.html with thourough protection against
+code injection from the QUERY_STRING. Several implementations were trialled:
+simply removing any special chars, reporting special chars with a fatal error,
+individually policing different variables for distinct sets of dangerous special
+chars. The final version addresses nearly all threats in one approach by
+substituting HTML character codes for any input character that might cause any 
+problem somewhere in the code. The only additional step required is to escape 
+the &s in these character codes before they are used for sed substitution. I 
+have settled on this approach because it allows the user to enter any character
+they wish and it will go on to serve as any legitimate use as a literal
+character in the final HTML output. One consiquence of this implementation is
+that the reportbacks had to be changed to HTML content-type to correctly render
+the special characters and avoid confusion for the end user.
 mwp.cgi does not appear to need security measures of its own independent
 from view_page.cgi. It appears that special chars that are not suppresed by ""
 are still not reevaluated after being expanded from a variable. User can inject
-HMTL into final echo of $PAGEDATA, but this only returns to user and is harmless
+HMTL into final echo of $PAGEDATA, but this only returns to user and is harmless.
 
-Exercise III:
+- Ownership -
 scripts add-update_item.cgi and view_page.cgi are from class, modified by Jack.
 Delete_item.cgi is by Jack, based on code from add-update_item.cgi.
 clean_qryparse, by Jack, is a helper for qryparse, from class, that subtitutes
@@ -42,8 +42,7 @@ these scripts consider the following to be invalid input:
 * a form with any field left blank
 * an add/edit form with item color not a hex triplet or valid html color name
 * a delete or view page form that references a page or item that doesn't exist
-
-NOTE: fl truncates very long strings before placing them in the format output
+* fl truncates very long strings before placing them in the format output
       this happens without any warning to the user.
 
 — Testing —
@@ -56,27 +55,6 @@ that the delete form will report back after deleting the last item to let you
 know that it has also deleted the empty page (you can check this by using
 view page).
 
-NOTE: edgetest and deletetest pages are based on auto generated .tab files with
-spaces in them. These files work fine when accessed from the browser. However
-the handin script refused to take them, so I have removed them from the durring
-the code submission. The files will be replaced afterwards and accessable thru
-the browser
-
 the error conditions described above have all been tested manually
-
-
-- EXTRA CREDIT: Code Injection Protection -
-I have enhanced the scripts called by ewp.html with thourough protection againstcode injection from the QUERY_STRING. Several implementations were trialled:
-simply removing any special chars, reporting special chars with a fatal error,
-individually policing different variables for distinct sets of dangerous special
-chars. The final version addresses nearly all threats in one approach by
-substituting HTML character codes for any input character that might cause any 
-problem somewhere in the code. The only additional step required is to escape 
-the &s in these character codes before they are used for sed substitution. I 
-have settled on this approach because it allows the user to enter any character
-they wish and it will go on to serve as any legitimate use as a literal
-character in the final HTML output. One consiquence of this implementation is
-that the reportbacks had to be changed to HTML content-type to correctly render
-the special characters and avoid confusion for the end user.
 
  
